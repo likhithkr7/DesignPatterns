@@ -1,4 +1,4 @@
-package Strategy;
+package Strategy.Quack;
 
 public class Quack implements QuackBehaviour{
     @Override

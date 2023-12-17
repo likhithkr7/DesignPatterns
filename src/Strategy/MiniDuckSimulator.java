@@ -1,5 +1,11 @@
 package Strategy;
 
+import Strategy.Duck.Duck;
+import Strategy.Duck.MallardDuck;
+import Strategy.Duck.RubberDuck;
+import Strategy.Fly.FlyWithBatteryPower;
+import Strategy.Quack.Squeak;
+
 /** Strategy Pattern - Defines a family of algorithms, encapsulates each one, and makes them
  * interchangeable. Strategy lets the algorithm vary independently from clients that use it.
  **/
@@ -12,7 +18,7 @@ public class MiniDuckSimulator {
         mallardDuck.performFly();
         mallardDuck.swim();
 
-        Duck modelDuck = new ModelDuck();
+        Duck modelDuck = new RubberDuck();
         modelDuck.display();
         modelDuck.performQuack();
         modelDuck.performFly();
